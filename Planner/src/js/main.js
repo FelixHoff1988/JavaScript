@@ -51,5 +51,5 @@ let positiv = bilanz >= 0;
 console.log(`Einnahmen: ${einnahmen} ct
 Ausgaben: ${ausgaben} ct
 Bilanz: ${bilanz} ct
-Bilanz ist positive: ${positiv}`
+Bilanz ist positiv: ${positiv}`
 );
