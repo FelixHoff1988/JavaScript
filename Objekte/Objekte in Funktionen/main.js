@@ -25,3 +25,10 @@ let konto2 = {
     kontostand: 2548,
     aktiv: true
 };
+
+const kontostand_ausgeben = function(konto) {
+    console.log(`${konto.inhaber.vorname} ${konto.inhaber.nachname} hat ${konto.kontostand} € auf dem Konto.`);
+};
+
+kontostand_ausgeben(konto1);
+kontostand_ausgeben(konto2);
