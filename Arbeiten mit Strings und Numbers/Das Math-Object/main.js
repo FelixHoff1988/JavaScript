@@ -8,6 +8,8 @@ console.log(Math);
 let a = Math.PI * Math.pow(12, 2);
 console.log(a);
 
+// Runden
+
 let a_gerundet = Math.round(a);
 console.log(a_gerundet);
 
@@ -17,8 +19,12 @@ console.log(a_abgerundet);
 let a_aufgerundet = Math.ceil(a);
 console.log(a_aufgerundet);
 
+// Nachkommastellen
+
 let a_nachkommastellen = a.toFixed(3);
 console.log(a_nachkommastellen);
+
+// Strings in Zahlen umwandeln
 
 let a_integer = parseInt(a_nachkommastellen);
 console.log(a_integer);
