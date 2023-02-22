@@ -107,7 +107,7 @@ const haushaltsbuch = {
             }
         })
     },
-
+/* 
     eintraege_ausgeben() {
         console.clear();
         this.eintraege.forEach(function(eintrag) {
@@ -120,6 +120,27 @@ const haushaltsbuch = {
             );
         });
         
+    },
+     */
+/* 
+<ul>
+    <li class="ausgabe">
+        <span class="datum">03.02.2020</span>
+        <span class="titel">Miete</span>
+        <span class="betrag">545,00 €</span>
+        <button class="entfernen-button"><i class="fas fa-trash"></i></button>
+    </li>
+    <li class="einnahme">
+        <span class="datum">01.02.2020</span>
+        <span class="titel">Gehalt</span>
+        <span class="betrag">2064,37 €</span>
+        <button class="entfernen-button"><i class="fas fa-trash"></i></button>
+    </li>
+</ul>
+ */
+
+    eintraege_anzeigen() {
+
     },
 
     gesamtbilanz_erstellen() {
@@ -159,7 +180,7 @@ const haushaltsbuch = {
             this.eintrag_erfassen();
             if (this.fehler.length === 0) {
                 this.eintraege_sortieren()
-                this.eintraege_ausgeben();
+                this.eintraege_anzeigen();
                 this.gesamtbilanz_erstellen();
                 this.gesamtbilanz_ausgeben();
             } else {
