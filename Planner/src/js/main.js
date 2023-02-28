@@ -107,37 +107,6 @@ const haushaltsbuch = {
             }
         })
     },
-/* 
-    eintraege_ausgeben() {
-        console.clear();
-        this.eintraege.forEach(function(eintrag) {
-            console.log(`Titel: ${eintrag.get("titel")}\n`
-                + `Typ: ${eintrag.get("typ")}\n`
-                + `Betrag: ${(eintrag.get("betrag")/100).toFixed(2)} €\n`
-                + `Datum: ${eintrag.get("datum").toLocaleDateString("de-DE", {
-                    year: "numeric", month: "2-digit", day: "2-digit"
-                })}`
-            );
-        });
-        
-    },
-     */
-/* 
-<ul>
-    <li class="ausgabe" data-timestamp="15648973132">
-        <span class="datum">03.02.2020</span>
-        <span class="titel">Miete</span>
-        <span class="betrag">545,00 €</span>
-        <button class="entfernen-button"><i class="fas fa-trash"></i></button>
-    </li>
-    <li class="einnahme" data-timestamp="15648945132">
-        <span class="datum">01.02.2020</span>
-        <span class="titel">Gehalt</span>
-        <span class="betrag">2064,37 €</span>
-        <button class="entfernen-button"><i class="fas fa-trash"></i></button>
-    </li>
-</ul>
- */
 
     html_eintrag_generieren(eintrag) {
         let listenpunkt = document.createElement("li");
@@ -211,14 +180,7 @@ const haushaltsbuch = {
         })
         this.gesamtbilanz = neue_gesamtbilanz;
     },
-/* 
-<aside id="gesamtbilanz">
-    <h1>Gesamtbilanz</h1>
-    <div class="gesamtbilanz-zeile einnahmen"><span>Einnahmen:</span><span>0,00 €</span></div>
-    <div class="gesamtbilanz-zeile ausgaben"><span>Ausgaben:</span><span>0,00 €</span></div>
-    <div class="gesamtbilanz-zeile bilanz"><span>Bilanz:</span><span class="positiv">0,00 €</span></div>
-</aside>
- */
+
     html_gesamtbilanz_generieren() {
         let gesamtbilanz = document.createElement("aside");
         gesamtbilanz.setAttribute("id", "gesamtbilanz");
